@@ -27,6 +27,43 @@ height: 450px;
 #pl-17 .so-panel {
     margin-bottom: 05px !important;
 }
-.image-ultimate-hover-1 .iheu-info {
-    background: rgba(0, 146, 194, 0.68);
-	}
+.containerimage {
+    position: relative;
+ margin-bottom:10px;
+}
+
+.image {
+  opacity: 1;
+transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.containerimage:hover .image {
+  opacity: 0.3;
+}
+
+.containerimage:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.text>p{
+color: #000;
+}
